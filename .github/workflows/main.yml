@@ -1,4 +1,4 @@
-name: Run Selenium Java Tests
+name: Run Selenium Java Test
 
 on: [push, pull_request]
 
