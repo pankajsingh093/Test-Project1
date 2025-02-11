@@ -1,13 +1,20 @@
 name: Run Selenium Java Test
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-   
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      
+      - name: Install Selenium IDE Runner
+        run: npm install -g selenium-side-runner
+      
+      - name: Run Selenium IDE Tests
+        run: selenium-side-runner path/to/your-test.side
