@@ -17,5 +17,5 @@ jobs:
         run: npm install -g selenium-side-runner
       
       - name: Run Selenium IDE Tests
-        run: selenium-side-runner path/to/GIT.side
+        run: selenium-side-runner GIT.side
      
