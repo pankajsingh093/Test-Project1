@@ -1,0 +1,230 @@
+{
+  "id": "d1f152c4-1693-4514-b23c-c95a42f7340e",
+  "version": "2.0",
+  "name": "GIT",
+  "url": "https://git-tracker-web-dev.herokuapp.com",
+  "tests": [{
+    "id": "277c0e13-2827-46e7-8b70-f9613eed6712",
+    "name": "Add New Order",
+    "commands": [{
+      "id": "4971866e-dd3f-4433-ab23-6763ecdd4b18",
+      "comment": "",
+      "command": "open",
+      "target": "/account/login?returnUrl=%2F",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01eaf9f1-5750-421e-b797-d9f3b828fc63",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1209x867",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a76752bf-9e35-4de1-9c28-626ecbf5de61",
+      "comment": "",
+      "command": "click",
+      "target": "id=mat-input-0",
+      "targets": [
+        ["id=mat-input-0", "id"],
+        ["css=#mat-input-0", "css:finder"],
+        ["xpath=//input[@id='mat-input-0']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c68e0d37-d5af-416c-a5c9-d431f31d914b",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-0",
+      "targets": [
+        ["id=mat-input-0", "id"],
+        ["css=#mat-input-0", "css:finder"],
+        ["xpath=//input[@id='mat-input-0']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pankaj.singh@lightwaremedia.com"
+    }, {
+      "id": "c443f476-9089-4531-b110-2e6b109e8ff1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-raised-button",
+      "targets": [
+        ["css=.mat-raised-button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'login Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4465ef6-91b3-4e01-a40f-be852c751797",
+      "comment": "",
+      "command": "type",
+      "target": "id=mat-input-1",
+      "targets": [
+        ["id=mat-input-1", "id"],
+        ["css=#mat-input-1", "css:finder"],
+        ["xpath=//input[@id='mat-input-1']", "xpath:attributes"],
+        ["xpath=//mat-form-field[2]/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": "pANKAJ123#"
+    }, {
+      "id": "646f7408-bb8d-4891-a877-63233b3a31ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-raised-button",
+      "targets": [
+        ["css=.mat-raised-button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'login Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc6e8be-d24a-4e93-b979-2c2dd7eb5bfa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mr-3 .mat-icon",
+      "targets": [
+        ["css=.mr-3 .mat-icon", "css:finder"],
+        ["xpath=//app-toolbar/mat-toolbar/button/span/mat-icon", "xpath:position"],
+        ["xpath=//mat-icon[contains(.,'add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddd639a5-e996-40a7-87bc-694da27b1a8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c81-52 > .mat-select-min-line",
+      "targets": [
+        ["css=.ng-tns-c81-52 > .mat-select-min-line", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-9']/span/span", "xpath:idRelative"],
+        ["xpath=//mat-form-field[2]/div/div/div[3]/mat-select/div/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5807f384-150d-4290-b947-77b45d60c59e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-22 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-22 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-22']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfec0cf7-2fcd-4e16-a86a-1dac15a728ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-select-value-11 > .mat-select-placeholder",
+      "targets": [
+        ["css=#mat-select-value-11 > .mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-11']/span", "xpath:idRelative"],
+        ["xpath=//section[2]/mat-form-field/div/div/div[3]/mat-select/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b783e3a5-fa1c-4341-a8ff-eeaf2ae0bda8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-309 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-309 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-309']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'A.E PARNEL AND COMPANY LIMTED')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceabc401-83ab-4ae1-a89f-cf60419fcfe8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='mat-input-13']",
+      "targets": [
+        ["id=mat-input-13", "id"],
+        ["css=#mat-input-13", "css:finder"],
+        ["xpath=//input[@id='mat-input-13']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-1']/app-order-create/form/mat-dialog-content/div/section[3]/mat-form-field/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65081fdf-54a8-4cf1-af33-49915435569e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//mat-dialog-container[@id='mat-dialog-1']/app-order-create/form/mat-dialog-content/div/section[3]/mat-form-field/div/div/div[3]/input",
+      "targets": [
+        ["id=mat-input-13", "id"],
+        ["css=#mat-input-13", "css:finder"],
+        ["xpath=//input[@id='mat-input-13']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-1']/app-order-create/form/mat-dialog-content/div/section[3]/mat-form-field/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "TEST123"
+    }, {
+      "id": "88595567-ffe9-4035-a19e-3b1558967520",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c77-75 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c77-75 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-1']/app-order-create/form/mat-dialog-content/div/section[3]/mat-form-field[2]/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//section[3]/mat-form-field[2]/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfc2cb4f-8c89-4a49-8b68-0305015597d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-26 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-26 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-26']/span", "xpath:idRelative"],
+        ["xpath=//mat-option/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a03e5272-b991-432f-8b65-0432b3b080a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused .mat-icon",
+      "targets": [
+        ["css=.cdk-focused .mat-icon", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-dialog-1']/app-order-create/form/mat-dialog-actions/button[4]/span/mat-icon", "xpath:idRelative"],
+        ["xpath=//button[4]/span/mat-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4025a92-3557-4520-abdb-49e29e9e6b65",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ml-auto > .mat-focus-indicator",
+      "targets": [
+        ["css=.ml-auto > .mat-focus-indicator", "css:finder"],
+        ["xpath=//app-dispatch-open-orders/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'file_download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "120ac674-f4d7-4944-b484-1cd328879d3e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ml-auto > .mat-focus-indicator",
+      "targets": [
+        ["css=.ml-auto > .mat-focus-indicator", "css:finder"],
+        ["xpath=//app-dispatch-open-orders/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'file_download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8b4e151a-dd8d-4bf5-bdc9-58e93d261ed8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 1000,
+    "tests": ["277c0e13-2827-46e7-8b70-f9613eed6712"]
+  }],
+  "urls": ["https://git-tracker-web-dev.herokuapp.com/"],
+  "plugins": []
+}
