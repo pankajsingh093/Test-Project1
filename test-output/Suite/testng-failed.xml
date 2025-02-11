@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="6">
+  <test thread-count="5" name="OrderPageTest(failed)" verbose="6">
+    <classes>
+      <class name="org.qa.gittracker.tests.OrderPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="doLogin"/>
+          <include name="tearDown"/>
+          <include name="testCreateOrder"/>
+        </methods>
+      </class> <!-- org.qa.gittracker.tests.OrderPageTest -->
+    </classes>
+  </test> <!-- OrderPageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
