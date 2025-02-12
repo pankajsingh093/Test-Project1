@@ -28,11 +28,10 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Do login with username & password, build with maven
-      env:
-          id: ${{ secrets.DEV_USER_NAME }}
-          pass: ${{ secrets.DEV_PASS }}
+      #env:
+       #   id: ${{ secrets.DEV_USER_NAME }}
+         # pass: ${{ secrets.DEV_PASS }}
       run: |
-          echo : $id
           mvn clean install -Dbrowser=chrome -Dusername=pankaj.singh@lightwaremedia.com -Dpassword=pANKAJ123# --file pom.xml
       #mvn -B package --file pom.xml
 
