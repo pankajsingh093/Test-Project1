@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.qa.gittracker.exception.FrameworkException;
@@ -18,13 +19,18 @@ public class DriverFactory {
 	
 	public WebDriver initDriver(Properties prop) {
 		
-		String browserName = prop.getProperty("browser").trim();
+		//String browserName = prop.getProperty("browser").trim();
+		
+		String browserName  = System.getProperty("browser").trim();
 		
 		switch (browserName.toLowerCase()) {
 		case "chrome":
+			ChromeOptions cp =new ChromeOptions();
+			cp.addArguments("--headless");
 			driver = new ChromeDriver();
 			break;
 		case "edge":
+			
 			driver = new EdgeDriver();
 			break;
 		case "firefox":
@@ -58,5 +64,6 @@ public class DriverFactory {
 		return prop;
 	}
 	
+	//mvn clean install -Dbrowser=chrome -Dusername=pankaj.singh@lightwaremedia.com  -Dpassword=pANKAJ123#
 
 }

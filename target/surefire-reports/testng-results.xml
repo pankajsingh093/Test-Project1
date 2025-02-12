@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-12T15:46:10 IST" name="Suite" finished-at="2025-02-12T15:46:46 IST" duration-ms="35936">
+    <groups>
+    </groups>
+    <test started-at="2025-02-12T15:46:10 IST" name="LoginPageTest" finished-at="2025-02-12T15:46:26 IST" duration-ms="15731">
+      <class name="org.qa.gittracker.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.qa.gittracker.tests.LoginPageTest@4ddced80]" started-at="2025-02-12T15:46:10 IST" name="setUp" finished-at="2025-02-12T15:46:19 IST" duration-ms="9101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginPageTitle()[pri:1, instance:org.qa.gittracker.tests.LoginPageTest@4ddced80]" started-at="2025-02-12T15:46:19 IST" name="testLoginPageTitle" finished-at="2025-02-12T15:46:19 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageTitle -->
+        <test-method signature="testLogin()[pri:2, instance:org.qa.gittracker.tests.LoginPageTest@4ddced80]" started-at="2025-02-12T15:46:19 IST" name="testLogin" finished-at="2025-02-12T15:46:26 IST" duration-ms="6411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.qa.gittracker.tests.LoginPageTest@4ddced80]" started-at="2025-02-12T15:46:26 IST" name="tearDown" finished-at="2025-02-12T15:46:26 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.qa.gittracker.tests.LoginPageTest -->
+    </test> <!-- LoginPageTest -->
+    <test started-at="2025-02-12T15:46:26 IST" name="OrderPageTest" finished-at="2025-02-12T15:46:46 IST" duration-ms="20125">
+      <class name="org.qa.gittracker.tests.OrderPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.qa.gittracker.tests.OrderPageTest@9353778]" started-at="2025-02-12T15:46:26 IST" name="setUp" finished-at="2025-02-12T15:46:29 IST" duration-ms="2603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="doLogin()[pri:0, instance:org.qa.gittracker.tests.OrderPageTest@9353778]" started-at="2025-02-12T15:46:29 IST" name="doLogin" finished-at="2025-02-12T15:46:36 IST" duration-ms="7050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="testCreateOrder()[pri:0, instance:org.qa.gittracker.tests.OrderPageTest@9353778]" started-at="2025-02-12T15:46:36 IST" name="testCreateOrder" finished-at="2025-02-12T15:46:46 IST" duration-ms="10347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.qa.gittracker.tests.OrderPageTest@9353778]" started-at="2025-02-12T15:46:46 IST" name="tearDown" finished-at="2025-02-12T15:46:46 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.qa.gittracker.tests.OrderPageTest -->
+    </test> <!-- OrderPageTest -->
+  </suite> <!-- Suite -->
+</testng-results>

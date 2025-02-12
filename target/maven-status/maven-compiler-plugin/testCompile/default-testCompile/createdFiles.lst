@@ -1,0 +1,3 @@
+org\qa\gittracker\tests\LoginPageTest.class
+org\qa\gittracker\tests\OrderPageTest.class
+org\qa\gittracker\base\BaseTest.class
