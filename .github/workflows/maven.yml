@@ -28,11 +28,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Do login with username & password, build with maven
-      #env:
-       #   id: ${{ secrets.DEV_USER_NAME }}
-         # pass: ${{ secrets.DEV_PASS }}
+      env:
+          ID: ${{ secrets.DEV_USER_NAME }}
+          PASS: ${{ secrets.DEV_PASS }}
       run: |
-          mvn clean install -Dbrowser=chrome -Dusername=pankaj.singh@lightwaremedia.com -Dpassword=pANKAJ123# --file pom.xml
+          mvn clean install -Dbrowser=chrome -Dusername=${ID} -Dpassword=${PASS} --file pom.xml
       #mvn -B package --file pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
