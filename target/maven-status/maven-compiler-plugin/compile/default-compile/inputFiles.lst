@@ -1,6 +1,6 @@
-C:\Users\User\eclipse-workspace\git_tracker\src\main\java\org\qa\gittracker\constants\GitTrackerConstants.java
-C:\Users\User\eclipse-workspace\git_tracker\src\main\java\org\qa\gittracker\Factory\DriverFactory.java
-C:\Users\User\eclipse-workspace\git_tracker\src\main\java\org\qa\gittracker\exception\FrameworkException.java
-C:\Users\User\eclipse-workspace\git_tracker\src\main\java\org\qa\gritracker\pages\OrderPage.java
-C:\Users\User\eclipse-workspace\git_tracker\src\main\java\org\qa\gittracker\utils\ElementUtil.java
-C:\Users\User\eclipse-workspace\git_tracker\src\main\java\org\qa\gritracker\pages\LoginPage.java
+C:\Test-Project1\src\main\java\org\qa\gittracker\Factory\DriverFactory.java
+C:\Test-Project1\src\main\java\org\qa\gittracker\exception\FrameworkException.java
+C:\Test-Project1\src\main\java\org\qa\gritracker\pages\OrderPage.java
+C:\Test-Project1\src\main\java\org\qa\gittracker\constants\GitTrackerConstants.java
+C:\Test-Project1\src\main\java\org\qa\gittracker\utils\ElementUtil.java
+C:\Test-Project1\src\main\java\org\qa\gritracker\pages\LoginPage.java

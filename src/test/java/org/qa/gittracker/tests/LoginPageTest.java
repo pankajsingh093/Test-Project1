@@ -10,7 +10,7 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority = 1)
 	public void testLoginPageTitle() {
-		
+		//lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		Assert.assertEquals(lp.getLoginPageTitle(), GitTrackerConstants.LOGIN_PAGE_TITLE);
 		
 	}
