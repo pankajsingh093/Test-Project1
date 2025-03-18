@@ -39,10 +39,10 @@ public class OrderPage {
 	}
 	
 	public void createOrder() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(7000);
 		eleUtil.waitForVisibilityOfWebElement(orderBtn).click();
 		
-		Thread.sleep(4000);
+		Thread.sleep(7000);
 		
 		driver.findElement(customerDropdown).click();
 		
