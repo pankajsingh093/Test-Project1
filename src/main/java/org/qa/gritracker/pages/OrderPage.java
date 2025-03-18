@@ -12,7 +12,7 @@ public class OrderPage {
 	
 	private By orderBtn = By.xpath("//*[text()='add']");
 	
-	private By customerDropDownValue = By.xpath("//mat-option[contains(@id, 'mat-option-')]//span[text()='129 Properties Limited ']");
+	private By customerDropDownValue = By.xpath("//mat-option[contains(@id, 'mat-option-')]//span[text()='129 Properties Limited']");
 	
 	private By customerSearch = By.cssSelector("#mat-input-3");
 	
