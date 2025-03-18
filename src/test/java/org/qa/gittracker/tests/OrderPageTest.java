@@ -18,6 +18,7 @@ public class OrderPageTest extends BaseTest {
 	@Test
 	public void testCreateOrder() throws InterruptedException {
 		op.createOrder();
+		
 		Assert.assertEquals(op.getOrderSuccessMessage(), GitTrackerConstants.ORDER_SUCCESS_MESSAGE);
 	}
 
