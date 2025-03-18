@@ -22,8 +22,7 @@ public class OrderPage {
 	
 	private By saveBtn = By.xpath("//mat-icon[text()='save']");
 	
-	private By orderSuccessMessage = By.xpath("//*[text()='Order saved successfully']");
-	
+	private By orderSuccessMessage = By.xpath("//*[text()='Order saved successfully']")
 	
 	
 	public OrderPage(WebDriver driver) {
