@@ -18,7 +18,7 @@ public class OrderPageTest extends BaseTest {
 	@Test
 	public void testCreateOrder() throws InterruptedException {
 		op.createOrder();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		Assert.assertEquals(op.getOrderSuccessMessage(), GitTrackerConstants.ORDER_SUCCESS_MESSAGE);
 	}
 
