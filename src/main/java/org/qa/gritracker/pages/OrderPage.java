@@ -31,6 +31,7 @@ public class OrderPage {
 	
 	private By containerSize = By.xpath("(//mat-select[contains(@id,'mat-select-')])[7]");
 	
+<<<<<<< HEAD
 	private By loadedCB = By.xpath("//span[text()='Loaded']");
 	
 	private By timeReceived = By.xpath("//input[@id = 'mat-input-4']");
@@ -139,6 +140,8 @@ public class OrderPage {
 	private By inTransitText = By.xpath("//span[@class='mat-simple-snack-bar-content']");
 	
 		
+=======
+>>>>>>> 85d0b9e2e28817e28ea73d9f5b73f1f9bde261bb
 	public OrderPage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(this.driver);
@@ -153,11 +156,21 @@ public class OrderPage {
 	}
 	
 	public void createOrder() throws InterruptedException {
+<<<<<<< HEAD
 		
 		eleUtil.fluentWaitPresenceOfWebElement(orderBtn).click();
 		
 		Thread.sleep(4000);
 		eleUtil.fluentWaitTillElementClickable(customerDropdown).click();
+=======
+		Thread.sleep(7000);
+		eleUtil.waitForVisibilityOfWebElement(orderBtn).click();
+		
+		Thread.sleep(7000);
+		
+		driver.findElement(customerDropdown).click();
+		
+>>>>>>> 85d0b9e2e28817e28ea73d9f5b73f1f9bde261bb
 		eleUtil.waitForPresenceOfWebElement(customerSearch).sendKeys("129 Properties Limited");
 		eleUtil.waitForPresenceOfWebElement(customerDropDownValue).click();
 		eleUtil.waitForVisibilityOfWebElement(containerName).sendKeys(generateRamdomNo(10));
