@@ -19,9 +19,9 @@ public class DriverFactory {
 	
 	public WebDriver initDriver(Properties prop) {
 		
-		String browserName = prop.getProperty("browser").trim();
+		//String browserName = prop.getProperty("browser").trim();
 		
-		//String browserName  = System.getProperty("browser").trim();
+		String browserName  = System.getProperty("browser").trim();
 		
 		switch (browserName.toLowerCase()) {
 		case "chrome":
