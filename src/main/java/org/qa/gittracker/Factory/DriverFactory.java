@@ -26,7 +26,7 @@ public class DriverFactory {
 		switch (browserName.toLowerCase()) {
 		case "chrome":
 			ChromeOptions cp =new ChromeOptions();
-			cp.addArguments("");
+			cp.addArguments("--headless");
 			driver = new ChromeDriver();
 			break;
 		case "edge":
