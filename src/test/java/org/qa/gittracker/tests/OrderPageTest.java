@@ -7,20 +7,18 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class OrderPageTest extends BaseTest {
-
+	
 	@BeforeClass
 	public void doLogin() throws InterruptedException {
-		//op = lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		//lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		op = lp.doLogin(System.getProperty("username"), System.getProperty("password"));
-		// op = lp.doLogin(System.getProperty("username"),
-		// System.getProperty("password"));
 	}
-
-	@Test(priority = 0)
+	
+	
+	@Test
 	public void testCreateOrder() throws InterruptedException {
 		op.createOrder();
-		Thread.sleep(5000);
-		//Assert.assertEquals(op.getOrderSuccessMessage(), GitTrackerConstants.ORDER_SUCCESS_MESSAGE);
+		Assert.assertEquals(op.getOrderSuccessMessage(), GitTrackerConstants.ORDER_SUCCESS_MESSAGE);
 	}
 
 }

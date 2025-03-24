@@ -7,8 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ElementUtil {
@@ -34,56 +32,10 @@ public class ElementUtil {
 	}
 	
 	
-	public void waitScrollTillWebElementAndClick(By locator) {
-		WebElement ele = fluentWaitPresenceOfWebElement(locator);
+	public void waitScrollTillWebElementAndClick(WebElement ele) {
 		Actions act =new Actions(driver);
 		act.pause(3000).scrollToElement(ele);
 		ele.click();
 	}
-	
-	public WebElement waitScrollTillWebElement(WebElement ele) {
-		Actions act =new Actions(driver);
-		act.pause(3000).scrollToElement(ele);
-		return ele;
-	}
-	
-	
-	public WebElement fluentWaitPresenceOfWebElement(By locator) {
-		
-		Wait<WebDriver> fluentWait = new FluentWait<>(driver)
-				.withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofSeconds(5));
-		return fluentWait.until(ExpectedConditions.visibilityOfElementLocated(locator));	
-		
-	}
-	
-	public WebElement fluentWaitPresenceOfWebElement(WebElement ele) {
-		
-		Wait<WebDriver> fluentWait = new FluentWait<>(driver)
-				.withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofSeconds(1));
-		return fluentWait.until(ExpectedConditions.visibilityOf(ele));	
-		
-	}
-	
-	public WebElement fluentWaitTillElementClickable(By ele) {
-		
-		Wait<WebDriver> fluentWait = new FluentWait<>(driver)
-				.withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofSeconds(1));
-		return fluentWait.until(ExpectedConditions.elementToBeClickable(ele));	
-		
-	}
-	
-	public boolean elementDisplayed(WebElement ele) {
-		return fluentWaitPresenceOfWebElement(ele).isDisplayed();
-	}
-	
-	public WebElement getWebelement(By locator) {
-		return fluentWaitPresenceOfWebElement(locator).findElement(locator);
-	}
-	
-	public void implicitWait(int second) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(second));
-	}
+
 }
