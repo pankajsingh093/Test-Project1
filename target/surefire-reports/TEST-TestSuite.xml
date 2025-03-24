@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="45.101" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="379.062" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -63,7 +63,11 @@
     <property name="java.class.version" value="63.0"/>
     <property name="username" value="pankaj.singh@lightwaremedia.com"/>
   </properties>
-  <testcase name="testLoginPageTitle" classname="org.qa.gittracker.tests.LoginPageTest" time="0.019"/>
-  <testcase name="testLogin" classname="org.qa.gittracker.tests.LoginPageTest" time="6.628"/>
-  <testcase name="testCreateOrder" classname="org.qa.gittracker.tests.OrderPageTest" time="10.935"/>
+  <testcase name="testCreateOrder" classname="org.qa.gittracker.tests.OrderPageTest" time="31.855"/>
+  <testcase name="testOrderPageURL" classname="org.qa.gittracker.tests.OrderListPageTest" time="3.026"/>
+  <testcase name="testSearchOrder" classname="org.qa.gittracker.tests.OrderListPageTest" time="18.971"/>
+  <testcase name="testRequested" classname="org.qa.gittracker.tests.OrderEditPageTest" time="20.96"/>
+  <testcase name="testDispatchEvent" classname="org.qa.gittracker.tests.OrderEditPageTest" time="22.801"/>
+  <testcase name="testInTransit" classname="org.qa.gittracker.tests.OrderEditPageTest" time="31.223"/>
+  <testcase name="testDelivered" classname="org.qa.gittracker.tests.OrderEditPageTest" time="32.291"/>
 </testsuite>
