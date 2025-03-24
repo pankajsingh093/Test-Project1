@@ -18,7 +18,7 @@ public class OrderPage {
 	
 	private By customerDropdown = By.xpath("//mat-select[@id='mat-select-10']");
 	
-	private By containerName = By.xpath("//input[@id='mat-input-15']");
+	private By containerName = By.xpath("(//input[contains(@id,'mat-input-')])[2]");
 	
 	private By saveBtn = By.xpath("//mat-icon[text()='save']");
 	
