@@ -7,21 +7,21 @@
     </classes>
   </test>
 	<!-- Test -->
-	<!--<test thread-count="5" name="OrderPageTest">
+	<test thread-count="5" name="OrderPageTest">
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderPageTest" />
 		</classes>
-	</test>-->
+	</test>
 	<!-- Test -->
-	<!--<test thread-count="5" name="OrderListPageTest">
+	<test thread-count="5" name="OrderListPageTest">
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderListPageTest" />
 		</classes>
-	</test>-->
-	<!--<test thread-count="5" name="OrderEditPageTest">
+	</test>
+	<test thread-count="5" name="OrderEditPageTest">
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderEditPageTest" />
 		</classes>
-	</test>-->
+	</test>
 	<!-- Test -->
 </suite> <!-- Suite -->
