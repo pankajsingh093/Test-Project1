@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="6">
-  <test thread-count="5" name="OrderPageTest(failed)" verbose="6">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.qa.gittracker.tests.OrderPageTest">
+      <class name="org.qa.gittracker.tests.OrderEditPageTest">
         <methods>
-          <include name="setUp"/>
           <include name="doLogin"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testCreateOrder"/>
+          <include name="testDriverInTransit"/>
         </methods>
-      </class> <!-- org.qa.gittracker.tests.OrderPageTest -->
+      </class> <!-- org.qa.gittracker.tests.OrderEditPageTest -->
     </classes>
-  </test> <!-- OrderPageTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

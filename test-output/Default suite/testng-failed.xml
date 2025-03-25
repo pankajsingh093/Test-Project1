@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.qa.gittracker.tests.OrderPageTest">
+      <class name="org.qa.gittracker.tests.OrderEditPageTest">
         <methods>
-          <include name="setUp"/>
           <include name="doLogin"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testCreateOrder"/>
+          <include name="testDriverInTransit"/>
         </methods>
-      </class> <!-- org.qa.gittracker.tests.OrderPageTest -->
+      </class> <!-- org.qa.gittracker.tests.OrderEditPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
