@@ -19,15 +19,15 @@ public class DriverFactory {
 	
 	public WebDriver initDriver(Properties prop) {
 		
-		//String browserName = prop.getProperty("browser").trim();
+		String browserName = prop.getProperty("browser").trim();
 		
-		String browserName  = System.getProperty("browser").trim();
+		//String browserName  = System.getProperty("browser").trim();
 		
 		switch (browserName.toLowerCase()) {
 		case "chrome":
 			ChromeOptions cp =new ChromeOptions();
 			cp.addArguments("--headless");
-			driver = new ChromeDriver(cp);
+			driver = new ChromeDriver();
 			break;
 		case "edge":
 			
@@ -62,6 +62,8 @@ public class DriverFactory {
 		}
 		
 		return prop;
-	}	
+	}
+	
+	
 
 }

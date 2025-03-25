@@ -10,7 +10,7 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority = 1)
 	public void testLoginPageTitle() {
-		//lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		
 		Assert.assertEquals(lp.getLoginPageTitle(), GitTrackerConstants.LOGIN_PAGE_TITLE);
 		
 	}
@@ -18,7 +18,7 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority = 2)
 	public void testLogin() throws InterruptedException {
 		op = lp.doLogin(System.getProperty("username"), System.getProperty("password"));
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		Assert.assertEquals(op.getOrderPageUrl(), GitTrackerConstants.ORDER_PAGE_URL);
 	}
 
