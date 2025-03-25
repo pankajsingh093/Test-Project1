@@ -1,8 +1,0 @@
-org\qa\gittracker\exception\FrameworkException.class
-org\qa\gritracker\pages\OrderPage.class
-org\qa\gittracker\Factory\DriverFactory.class
-org\qa\gittracker\constants\GitTrackerConstants.class
-org\qa\gittracker\utils\ElementUtil.class
-org\qa\gritracker\pages\OrderEditPage.class
-org\qa\gritracker\pages\OrderListPage.class
-org\qa\gritracker\pages\LoginPage.class
