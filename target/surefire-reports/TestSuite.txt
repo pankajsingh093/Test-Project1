@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 153.724 s <<< FAILURE! - in TestSuite
+testDriverInTransit(org.qa.gittracker.tests.OrderEditPageTest)  Time elapsed: 46.567 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a _ngcontent-bvh-c286="" mat-button="" class="mat-focus-indicator pl-0 ng-tns-c286-2 mat-button mat-button-base mat-primary" aria-disabled="false">...</a> is not clickable at point (312, 468). Other element would receive the click: <mat-dialog-content _ngcontent-bvh-c285="" class="mat-dialog-content">...</mat-dialog-content>
+  (Session info: chrome=134.0.6998.165)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e021834db4b667b2991b363cf039457, clickElement {id=f.B08EF2C650E4686C7256288B55A6A20C.d.58611DE49DB937ACA2DBCEA5E82578DB.e.202}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54659}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54659/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3e021834db4b667b2991b363cf039457)] -> xpath: (//mat-table[@role='table']//a)[3]]
+Session ID: 3e021834db4b667b2991b363cf039457
+	at org.qa.gittracker.tests.OrderEditPageTest.testDriverInTransit(OrderEditPageTest.java:44)
+
