@@ -32,8 +32,8 @@ jobs:
           ID: ${{ secrets.DEV_USER_NAME }}
           PASS: ${{ secrets.DEV_PASS }}
       run: |
-          mvn clean install -Dbrowser=chrome -Dusername=pankaj.singh@lightwaremedia.com  -Dpassword=pANKAJ123#
-          mvn clean install -Dbrowser=chrome -Dusername=pankaj.singh+gitt-customer@lightwaremedia.com -Dpassword=Pankaj123! --file pom.xml
+          #mvn clean install -Dbrowser=chrome -Dusername=pankaj.singh@lightwaremedia.com  -Dpassword=pANKAJ123#
+         
       #mvn -B package --file pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
