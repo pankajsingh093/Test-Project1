@@ -37,6 +37,7 @@ public class BaseTest {
 		prop = df.initProp();
 		driver = df.initDriver(prop);
 		lp = new LoginPage(driver);
+		op=new OrderPage(driver);
 		olp = new OrderListPage(driver);
 		oep = new OrderEditPage(driver);
 		clp = new CustomerLoginPage(driver);
