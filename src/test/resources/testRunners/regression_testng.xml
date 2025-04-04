@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="6">
-	<!--<test thread-count="5" name="LoginPageTest">
+	<test thread-count="5" name="LoginPageTest">
 		<classes>
 			<class name="org.qa.gittracker.tests.LoginPageTest" />
 		</classes>
 	</test>
-	<test thread-count="5" name="OrderPageTest">
+	<!--<test thread-count="5" name="OrderPageTest">
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderPageTest" />
 		</classes>
@@ -26,7 +26,7 @@
 			<class name="org.qa.customer.tests.CustomerLoginPageTest" />
 		</classes>
 	</test>
-	<test thread-count="5" name="CustomerOpenOrdersTest">
+	<!--<test thread-count="5" name="CustomerOpenOrdersTest">
 		<classes>
 			<class name="org.qa.customer.tests.CustomerOpenOrdersTest" />
 		</classes>
@@ -45,5 +45,5 @@
 		<classes>
 			<class name="org.qa.customer.tests.OrderRequestPageTest" />
 		</classes>
-	</test>
+	</test>->
 </suite>
