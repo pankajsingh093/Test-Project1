@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.qa.gittracker.tests.OrderEditPageTest" class="method navigator-link" hash-for-method="testDriverInTransit">testDriverInTransit</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,32 +103,37 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.qa.gittracker.tests.OrderPageTest" class="method navigator-link" hash-for-method="testCreateOrder">testCreateOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="org.qa.customer.tests.CustomerOpenOrdersTest" class="method navigator-link" hash-for-method="advSearch">advSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.qa.gittracker.tests.LoginPageTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="org.qa.customer.tests.CustomerLoginPageTest" class="method navigator-link" hash-for-method="testCustomerLogin">testCustomerLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.qa.gittracker.tests.LoginPageTest" class="method navigator-link" hash-for-method="testLoginPageTitle">testLoginPageTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="org.qa.customer.tests.CustomerLoginPageTest" class="method navigator-link" hash-for-method="testLoginPageTitle">testLoginPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.qa.gittracker.tests.OrderListPageTest" class="method navigator-link" hash-for-method="testOrderPageURL">testOrderPageURL</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="org.qa.customer.tests.CustomerOpenOrdersTest" class="method navigator-link" hash-for-method="testSearchOrder">testSearchOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.qa.gittracker.tests.OrderListPageTest" class="method navigator-link" hash-for-method="testSearchOrder">testSearchOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="org.qa.customer.tests.CustomerLinkedOrdersTest" class="method navigator-link" hash-for-method="testSearchOrder">testSearchOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.qa.gittracker.tests.OrderEditPageTest" class="method navigator-link" hash-for-method="testVechileInTransit">testVechileInTransit</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="org.qa.customer.tests.CustomerLinkedOrdersTest" class="method navigator-link" hash-for-method="verifyLinkedOrders">verifyLinkedOrders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.qa.customer.tests.CustomerOpenOrdersTest" class="method navigator-link" hash-for-method="verifyOpenOrders">verifyOpenOrders</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -157,55 +148,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.qa.gittracker.tests.OrderEditPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDriverInTransit">
-                  </a> <!-- testDriverInTransit -->
-                  <span class="method-name">testDriverInTransit</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-bvh-c286=&quot;&quot; mat-button=&quot;&quot; class=&quot;mat-focus-indicator pl-0 ng-tns-c286-2 mat-button mat-button-base mat-primary&quot; aria-disabled=&quot;false&quot;&gt;...&lt;/a&gt; is not clickable at point (312, 468). Other element would receive the click: &lt;mat-dialog-content _ngcontent-bvh-c285=&quot;&quot; class=&quot;mat-dialog-content&quot;&gt;...&lt;/mat-dialog-content&gt;
-  (Session info: chrome=134.0.6998.165)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3e021834db4b667b2991b363cf039457, clickElement {id=f.B08EF2C650E4686C7256288B55A6A20C.d.58611DE49DB937ACA2DBCEA5E82578DB.e.202}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54659}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54659/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3e021834db4b667b2991b363cf039457)] -&gt; xpath: (//mat-table[@role=&apos;table&apos;]//a)[3]]
-Session ID: 3e021834db4b667b2991b363cf039457
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.qa.gritracker.pages.OrderEditPage.driverInTransit(OrderEditPage.java:188)
-	at org.qa.gittracker.tests.OrderEditPageTest.testDriverInTransit(OrderEditPageTest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.qa.gittracker.tests.OrderPageTest</span>
+              <span class="class-name">org.qa.customer.tests.CustomerOpenOrdersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCreateOrder">
-                  </a> <!-- testCreateOrder -->
-                  <span class="method-name">testCreateOrder</span>
+                  <a name="advSearch">
+                  </a> <!-- advSearch -->
+                  <span class="method-name">advSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchOrder">
+                  </a> <!-- testSearchOrder -->
+                  <span class="method-name">testSearchOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOpenOrders">
+                  </a> <!-- verifyOpenOrders -->
+                  <span class="method-name">verifyOpenOrders</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,14 +180,14 @@ Session ID: 3e021834db4b667b2991b363cf039457
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.qa.gittracker.tests.LoginPageTest</span>
+              <span class="class-name">org.qa.customer.tests.CustomerLoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin">
-                  </a> <!-- testLogin -->
-                  <span class="method-name">testLogin</span>
+                  <a name="testCustomerLogin">
+                  </a> <!-- testCustomerLogin -->
+                  <span class="method-name">testCustomerLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -235,16 +202,9 @@ Session ID: 3e021834db4b667b2991b363cf039457
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.qa.gittracker.tests.OrderListPageTest</span>
+              <span class="class-name">org.qa.customer.tests.CustomerLinkedOrdersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testOrderPageURL">
-                  </a> <!-- testOrderPageURL -->
-                  <span class="method-name">testOrderPageURL</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testSearchOrder">
@@ -252,19 +212,11 @@ Session ID: 3e021834db4b667b2991b363cf039457
                   <span class="method-name">testSearchOrder</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.qa.gittracker.tests.OrderEditPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testVechileInTransit">
-                  </a> <!-- testVechileInTransit -->
-                  <span class="method-name">testVechileInTransit</span>
+                  <a name="verifyLinkedOrders">
+                  </a> <!-- verifyLinkedOrders -->
+                  <span class="method-name">verifyLinkedOrders</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -279,26 +231,21 @@ Session ID: 3e021834db4b667b2991b363cf039457
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LoginPageTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CustomerLoginPageTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.qa.gittracker.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;org.qa.customer.tests.CustomerLoginPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginPageTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;OrderPageTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;/test&gt; &lt;!-- CustomerLoginPageTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CustomerOpenOrdersTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.qa.gittracker.tests.OrderPageTest&quot;/&gt;
+      &lt;class name=&quot;org.qa.customer.tests.CustomerOpenOrdersTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- OrderPageTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;OrderListPageTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;/test&gt; &lt;!-- CustomerOpenOrdersTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CustomerLinkedOrdersTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.qa.gittracker.tests.OrderListPageTest&quot;/&gt;
+      &lt;class name=&quot;org.qa.customer.tests.CustomerLinkedOrdersTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- OrderListPageTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;OrderEditPageTest&quot; verbose=&quot;0&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.qa.gittracker.tests.OrderEditPageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- OrderEditPageTest --&gt;
+  &lt;/test&gt; &lt;!-- CustomerLinkedOrdersTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -310,16 +257,13 @@ Session ID: 3e021834db4b667b2991b363cf039457
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginPageTest (1 class)</span>
+                <span class="test-name">CustomerLoginPageTest (1 class)</span>
               </li>
               <li>
-                <span class="test-name">OrderPageTest (1 class)</span>
+                <span class="test-name">CustomerOpenOrdersTest (1 class)</span>
               </li>
               <li>
-                <span class="test-name">OrderListPageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">OrderEditPageTest (1 class)</span>
+                <span class="test-name">CustomerLinkedOrdersTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -347,38 +291,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testDriverInTransit')
-data.setCell(0, 2, 'org.qa.gittracker.tests.OrderEditPageTest')
-data.setCell(0, 3, 46536);
+data.setCell(0, 1, 'testSearchOrder')
+data.setCell(0, 2, 'org.qa.customer.tests.CustomerOpenOrdersTest')
+data.setCell(0, 3, 11560);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCreateOrder')
-data.setCell(1, 2, 'org.qa.gittracker.tests.OrderPageTest')
-data.setCell(1, 3, 27727);
+data.setCell(1, 1, 'advSearch')
+data.setCell(1, 2, 'org.qa.customer.tests.CustomerOpenOrdersTest')
+data.setCell(1, 3, 10101);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSearchOrder')
-data.setCell(2, 2, 'org.qa.gittracker.tests.OrderListPageTest')
-data.setCell(2, 3, 18786);
+data.setCell(2, 1, 'verifyOpenOrders')
+data.setCell(2, 2, 'org.qa.customer.tests.CustomerOpenOrdersTest')
+data.setCell(2, 3, 8235);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testVechileInTransit')
-data.setCell(3, 2, 'org.qa.gittracker.tests.OrderEditPageTest')
-data.setCell(3, 3, 8586);
+data.setCell(3, 1, 'testSearchOrder')
+data.setCell(3, 2, 'org.qa.customer.tests.CustomerLinkedOrdersTest')
+data.setCell(3, 3, 7461);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testLogin')
-data.setCell(4, 2, 'org.qa.gittracker.tests.LoginPageTest')
-data.setCell(4, 3, 6372);
+data.setCell(4, 1, 'verifyLinkedOrders')
+data.setCell(4, 2, 'org.qa.customer.tests.CustomerLinkedOrdersTest')
+data.setCell(4, 3, 7236);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testOrderPageURL')
-data.setCell(5, 2, 'org.qa.gittracker.tests.OrderListPageTest')
-data.setCell(5, 3, 3043);
+data.setCell(5, 1, 'testCustomerLogin')
+data.setCell(5, 2, 'org.qa.customer.tests.CustomerLoginPageTest')
+data.setCell(5, 3, 6664);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testLoginPageTitle')
-data.setCell(6, 2, 'org.qa.gittracker.tests.LoginPageTest')
-data.setCell(6, 3, 10);
+data.setCell(6, 2, 'org.qa.customer.tests.CustomerLoginPageTest')
+data.setCell(6, 3, 21);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -393,22 +337,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">org.qa.gittracker.tests.OrderEditPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testDispatchEvent</span>
-                <br/>
-                <span class="ignored-method-name">testInTransit</span>
-                <br/>
-                <span class="ignored-method-name">testRequested</span>
-                <br/>
-                <span class="ignored-method-name">testDelivered</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -417,89 +348,72 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.qa.gittracker.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.qa.customer.tests.CustomerLoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testLoginPageTitle</span>
-                <span class="method-start">11375 ms</span>
+                <span class="method-start">17693 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testLogin</span>
-                <span class="method-start">11385 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17758 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.qa.gittracker.tests.OrderPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">18115 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">doLogin</span>
-                <span class="method-start">24512 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testCreateOrder</span>
-                <span class="method-start">27834 ms</span>
+                <span class="method-name">testCustomerLogin</span>
+                <span class="method-start">17715 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">55563 ms</span>
+                <span class="method-start">24395 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">org.qa.gittracker.tests.OrderListPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.qa.customer.tests.CustomerOpenOrdersTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">55815 ms</span>
+                <span class="method-start">24482 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">doLogin</span>
-                <span class="method-start">62242 ms</span>
+                <span class="method-start">37991 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testOrderPageURL</span>
-                <span class="method-start">65559 ms</span>
+                <span class="method-name">verifyOpenOrders</span>
+                <span class="method-start">41586 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSearchOrder</span>
-                <span class="method-start">68602 ms</span>
+                <span class="method-start">49821 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">advSearch</span>
+                <span class="method-start">61381 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">87388 ms</span>
+                <span class="method-start">71482 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">org.qa.gittracker.tests.OrderEditPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.qa.customer.tests.CustomerLinkedOrdersTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">87668 ms</span>
+                <span class="method-start">71496 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">doLogin</span>
-                <span class="method-start">94356 ms</span>
+                <span class="method-start">82209 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testDriverInTransit</span>
-                <span class="method-start">97659 ms</span>
+                <span class="method-name">verifyLinkedOrders</span>
+                <span class="method-start">85727 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testVechileInTransit</span>
-                <span class="method-start">144226 ms</span>
+                <span class="method-name">testSearchOrder</span>
+                <span class="method-start">92964 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">152816 ms</span>
+                <span class="method-start">100425 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

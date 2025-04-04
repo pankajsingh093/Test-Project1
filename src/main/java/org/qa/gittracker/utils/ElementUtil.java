@@ -1,6 +1,8 @@
 package org.qa.gittracker.utils;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -74,6 +76,14 @@ public class ElementUtil {
 		return fluentWait.until(ExpectedConditions.elementToBeClickable(ele));	
 		
 	}
+	public WebElement fluentWaitTillElementClickable(WebElement ele) {
+		
+		Wait<WebDriver> fluentWait = new FluentWait<>(driver)
+				.withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofSeconds(5));
+		return fluentWait.until(ExpectedConditions.elementToBeClickable(ele));	
+		
+	}
 	
 	public boolean elementDisplayed(WebElement ele) {
 		return fluentWaitPresenceOfWebElement(ele).isDisplayed();
@@ -83,7 +93,32 @@ public class ElementUtil {
 		return fluentWaitPresenceOfWebElement(locator).findElement(locator);
 	}
 	
+	public void clickOnElement(WebElement ele) {
+		fluentWaitTillElementClickable(ele).click();
+	}
+	
 	public void implicitWait(int second) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(second));
+	}
+	
+	public String generateRamdomNo(int lenght) {
+		String ContainerNo ="TEST##$$12345";
+		Random randomSrting =new Random();
+		StringBuilder randomString=new StringBuilder();
+		for (int i=0; i < lenght; i++)
+		{
+			int randomIndex=randomSrting.nextInt(ContainerNo.length());
+			randomString.append(ContainerNo.charAt(randomIndex));
+		}
+		System.out.println("ContainerNo" + randomString.toString());
+		return randomString.toString();
+	}
+	
+	public void clickOnCB(List<String> listCB) {
+		
+		for(int i=0;i<listCB.size();i++) {
+			fluentWaitPresenceOfWebElement(By.xpath("//span[text()='"+ listCB.get(i) +"']")).click();
+		}
+		
 	}
 }

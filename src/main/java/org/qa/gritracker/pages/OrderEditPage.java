@@ -169,7 +169,7 @@ public class OrderEditPage {
 		clickCompleteTab();
 		Thread.sleep(2000);
 		WebElement ele = eleUtil.fluentWaitPresenceOfWebElement(searchOrderNumber);
-		System.out.println(reText);
+		//System.out.println(reText);
 		ele.sendKeys(reText);
 		Thread.sleep(3000);
 		ele.sendKeys(Keys.ENTER);
@@ -239,7 +239,7 @@ public class OrderEditPage {
 		 String str = driver.findElement(inTransitText).getText();
 		 Thread.sleep(2000);
 		 //eleUtil.fluentWaitPresenceOfWebElement(inTransitText).getText();
-		 System.out.println(str);
+		//System.out.println(str);
 		 return str;
 	}
 	

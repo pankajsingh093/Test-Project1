@@ -55,7 +55,7 @@ public class OrderListPage {
 	
 	private void searchOrderNumber() throws InterruptedException {
 		String txt = getOrderNumber();
-		System.out.println(txt);
+		//System.out.println(txt);
 		Thread.sleep(3000);
 		WebElement ele = eleUtil.fluentWaitPresenceOfWebElement(searchOrderNumber);
 		Thread.sleep(3000); 

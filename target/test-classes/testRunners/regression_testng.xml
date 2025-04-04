@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="6">
-	<test thread-count="5" name="LoginPageTest">
-    <classes>
-      <class name="org.qa.gittracker.tests.LoginPageTest"/>
-    </classes>
-  </test>
-	<!-- Test -->
+	<!--<test thread-count="5" name="LoginPageTest">
+		<classes>
+			<class name="org.qa.gittracker.tests.LoginPageTest" />
+		</classes>
+	</test>
 	<test thread-count="5" name="OrderPageTest">
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderPageTest" />
 		</classes>
 	</test>
-	<!-- Test -->
 	<test thread-count="5" name="OrderListPageTest">
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderListPageTest" />
@@ -22,6 +20,30 @@
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderEditPageTest" />
 		</classes>
+	</test>-->
+	<test thread-count="5" name="CustomerLoginPageTest">
+		<classes>
+			<class name="org.qa.customer.tests.CustomerLoginPageTest" />
+		</classes>
 	</test>
-	<!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="CustomerOpenOrdersTest">
+		<classes>
+			<class name="org.qa.customer.tests.CustomerOpenOrdersTest" />
+		</classes>
+	</test>
+	<!--<test thread-count="5" name="CustomerCompletedOrdersTest">
+		<classes>
+			<class name="org.qa.customer.tests.CustomerCompletedOrdersTest" />
+		</classes>
+	</test>-->
+	<test thread-count="5" name="CustomerLinkedOrdersTest">
+		<classes>
+			<class name="org.qa.customer.tests.CustomerLinkedOrdersTest" />
+		</classes>
+	</test>
+	<!--<test thread-count="5" name="OrderRequestPageTest">
+		<classes>
+			<class name="org.qa.customer.tests.OrderRequestPageTest" />
+		</classes>
+	</test>-->
+</suite>

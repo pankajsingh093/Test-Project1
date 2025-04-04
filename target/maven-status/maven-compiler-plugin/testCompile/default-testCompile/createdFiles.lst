@@ -1,5 +1,10 @@
 org\qa\gittracker\tests\OrderListPageTest.class
 org\qa\gittracker\tests\OrderPageTest.class
+org\qa\customer\tests\CustomerLinkedOrdersTest.class
+org\qa\customer\tests\CustomerCompletedOrdersTest.class
+org\qa\gittracker\tests\LoginPageTest.class
+org\qa\customer\tests\OrderRequestPageTest.class
+org\qa\customer\tests\CustomerOpenOrdersTest.class
+org\qa\customer\tests\CustomerLoginPageTest.class
 org\qa\gittracker\base\BaseTest.class
 org\qa\gittracker\tests\OrderEditPageTest.class
-org\qa\gittracker\tests\LoginPageTest.class

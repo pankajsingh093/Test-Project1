@@ -259,7 +259,7 @@ public class OrderPage {
 			int randomIndex=randomSrting.nextInt(ContainerNo.length());
 			randomString.append(ContainerNo.charAt(randomIndex));
 		}
-		System.out.println("ContainerNo" + randomString.toString());
+		//System.out.println("ContainerNo" + randomString.toString());
 		return randomString.toString();
 	}
 	

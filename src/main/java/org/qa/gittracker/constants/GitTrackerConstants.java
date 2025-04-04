@@ -9,6 +9,11 @@ public class GitTrackerConstants {
 	
 	public static final String ORDER_PAGE_URL = "https://git-tracker-web-dev.herokuapp.com/dispatch/open";
 	
+	public static final String CUST_OPEN_ORDER_PAGE_URL = "https://git-tracker-web-dev.herokuapp.com/customer/open-orders";
+	
+	public static final String CUST_COMPLETE_ORDER_PAGE_URL = "https://git-tracker-web-dev.herokuapp.com/customer/completed-orders";
+	public static final String CUST_COMPLETE_OPEN_ORDER_PAGE_URL = "https://git-tracker-web-dev.herokuapp.com/customer/open-orders";
+	
 	public static final String ORDER_SUCCESS_MESSAGE = "Order saved successfully";
 	
 	
@@ -18,5 +23,6 @@ public class GitTrackerConstants {
 	
 	public static final String DESTINATION_DROPDOWN_DATA = "10";
 	
-
+	public static final List<String> customerCBList =  Arrays.asList("Loaded","Site Inspection ", "R&D ");
+	public static String containerNo="";
 }

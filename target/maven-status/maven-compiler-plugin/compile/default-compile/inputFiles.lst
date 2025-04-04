@@ -1,8 +1,13 @@
-C:\Test-Project1\src\main\java\org\qa\gittracker\Factory\DriverFactory.java
 C:\Test-Project1\src\main\java\org\qa\gittracker\exception\FrameworkException.java
 C:\Test-Project1\src\main\java\org\qa\gritracker\pages\OrderPage.java
-C:\Test-Project1\src\main\java\org\qa\gittracker\constants\GitTrackerConstants.java
-C:\Test-Project1\src\main\java\org\qa\gritracker\pages\OrderListPage.java
+C:\Test-Project1\src\main\java\org\qa\customer\pages\CustomerLoginPage.java
+C:\Test-Project1\src\main\java\org\qa\customer\pages\OrderRequestPage.java
 C:\Test-Project1\src\main\java\org\qa\gittracker\utils\ElementUtil.java
-C:\Test-Project1\src\main\java\org\qa\gritracker\pages\OrderEditPage.java
+C:\Test-Project1\src\main\java\org\qa\customer\pages\CustomerCompletedOrders.java
 C:\Test-Project1\src\main\java\org\qa\gritracker\pages\LoginPage.java
+C:\Test-Project1\src\main\java\org\qa\gittracker\Factory\DriverFactory.java
+C:\Test-Project1\src\main\java\org\qa\gittracker\constants\GitTrackerConstants.java
+C:\Test-Project1\src\main\java\org\qa\customer\pages\CustomerOpenOrders.java
+C:\Test-Project1\src\main\java\org\qa\gritracker\pages\OrderListPage.java
+C:\Test-Project1\src\main\java\org\qa\customer\pages\CustomerLinkedOrders.java
+C:\Test-Project1\src\main\java\org\qa\gritracker\pages\OrderEditPage.java
