@@ -42,7 +42,7 @@ public class CustomerOpenOrders {
 	}
 
 	public void createMoveOpenOrders() throws InterruptedException {
-
+Thread.sleep(2000);
 		util.fluentWaitPresenceOfWebElement(openOrdersMenuItem).click();
 	}
 
