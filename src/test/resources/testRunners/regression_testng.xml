@@ -31,19 +31,19 @@
 			<class name="org.qa.customer.tests.CustomerOpenOrdersTest" />
 		</classes>
 	</test>
-	<!--<test thread-count="5" name="CustomerCompletedOrdersTest">
+	<test thread-count="5" name="CustomerCompletedOrdersTest">
 		<classes>
 			<class name="org.qa.customer.tests.CustomerCompletedOrdersTest" />
 		</classes>
-	</test>-->
+	</test>
 	<test thread-count="5" name="CustomerLinkedOrdersTest">
 		<classes>
 			<class name="org.qa.customer.tests.CustomerLinkedOrdersTest" />
 		</classes>
 	</test>
-	<!--<test thread-count="5" name="OrderRequestPageTest">
+	<test thread-count="5" name="OrderRequestPageTest">
 		<classes>
 			<class name="org.qa.customer.tests.OrderRequestPageTest" />
 		</classes>
-	</test>-->
+	</test>
 </suite>
