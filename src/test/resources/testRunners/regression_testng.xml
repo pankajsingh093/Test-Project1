@@ -45,5 +45,5 @@
 		<classes>
 			<class name="org.qa.customer.tests.OrderRequestPageTest" />
 		</classes>
-	</test>->
+	</test>-->
 </suite>
