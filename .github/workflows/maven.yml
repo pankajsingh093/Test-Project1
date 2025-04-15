@@ -29,8 +29,8 @@ jobs:
         cache: maven
     - name: Do login with username & password, build with maven
       env:
-          ID: ${{ secrets.DEV_USER_NAME }}
-          PASS: ${{ secrets.DEV_PASS }}
+          ID: ${{ secrets.DEV_CUSTOMER_NAME }}
+          PASS: ${{ secrets.DEV_CUSTOMER_PASS }}
       run: |
           mvn clean install -Dbrowser=chrome -Dusername=${ID} -Dpassword=${PASS} --file pom.xml
       #mvn -B package --file pom.xml
