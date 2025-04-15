@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="101.009" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="88.191" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -63,11 +63,18 @@
     <property name="java.class.version" value="63.0"/>
     <property name="username" value="pankaj.singh+gitt-customer@lightwaremedia.com"/>
   </properties>
-  <testcase name="testLoginPageTitle" classname="org.qa.customer.tests.CustomerLoginPageTest" time="0.018"/>
-  <testcase name="testCustomerLogin" classname="org.qa.customer.tests.CustomerLoginPageTest" time="6.68"/>
-  <testcase name="verifyOpenOrders" classname="org.qa.customer.tests.CustomerOpenOrdersTest" time="8.235"/>
-  <testcase name="testSearchOrder" classname="org.qa.customer.tests.CustomerOpenOrdersTest" time="11.56"/>
-  <testcase name="advSearch" classname="org.qa.customer.tests.CustomerOpenOrdersTest" time="10.101"/>
-  <testcase name="verifyLinkedOrders" classname="org.qa.customer.tests.CustomerLinkedOrdersTest" time="7.236"/>
-  <testcase name="testSearchOrder" classname="org.qa.customer.tests.CustomerLinkedOrdersTest" time="7.461"/>
+  <testcase name="testLoginPageTitle" classname="org.qa.customer.tests.CustomerLoginPageTest" time="0.017"/>
+  <testcase name="testCustomerLogin" classname="org.qa.customer.tests.CustomerLoginPageTest" time="5.544"/>
+  <testcase name="verifyCreatingOrderRequest" classname="org.qa.customer.tests.OrderRequestPageTest" time="9.325"/>
+  <testcase name="sendRequest" classname="org.qa.customer.tests.OrderRequestPageTest" time="44.886">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos; Order Request Submitted Successfully &apos;] (tried for 30 second(s) with 5000 milliseconds interval)&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=' Order Request Submitted Successfully '] (tried for 30 second(s) with 5000 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: unknown
+	at org.qa.customer.tests.OrderRequestPageTest.sendRequest(OrderRequestPageTest.java:27)
+</failure>
+    <system-out><![CDATA[ContainerNoTT$31#1
+]]></system-out>
+  </testcase>
 </testsuite>

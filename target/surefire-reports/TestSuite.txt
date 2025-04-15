@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 101.009 s - in TestSuite
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 88.191 s <<< FAILURE! - in TestSuite
+sendRequest(org.qa.customer.tests.OrderRequestPageTest)  Time elapsed: 44.886 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=' Order Request Submitted Successfully '] (tried for 30 second(s) with 5000 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: unknown
+	at org.qa.customer.tests.OrderRequestPageTest.sendRequest(OrderRequestPageTest.java:27)
+
