@@ -6,7 +6,7 @@
 			<class name="org.qa.gittracker.tests.LoginPageTest" />
 		</classes>
 	</test>
-	<!--<test thread-count="5" name="OrderPageTest">
+	<test thread-count="5" name="OrderPageTest">
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderPageTest" />
 		</classes>
@@ -20,30 +20,16 @@
 		<classes>
 			<class name="org.qa.gittracker.tests.OrderEditPageTest" />
 		</classes>
-	</test>-->
+	</test>
 	<test thread-count="5" name="CustomerLoginPageTest">
 		<classes>
 			<class name="org.qa.customer.tests.CustomerLoginPageTest" />
-		</classes>
-	</test>
-	<!--<test thread-count="5" name="CustomerOpenOrdersTest">
-		<classes>
-			<class name="org.qa.customer.tests.CustomerOpenOrdersTest" />
-		</classes>
-	</test>
-	<test thread-count="5" name="CustomerCompletedOrdersTest">
-		<classes>
-			<class name="org.qa.customer.tests.CustomerCompletedOrdersTest" />
-		</classes>
-	</test>
-	<test thread-count="5" name="CustomerLinkedOrdersTest">
-		<classes>
-			<class name="org.qa.customer.tests.CustomerLinkedOrdersTest" />
 		</classes>
 	</test>
 	<test thread-count="5" name="OrderRequestPageTest">
 		<classes>
 			<class name="org.qa.customer.tests.OrderRequestPageTest" />
 		</classes>
-	</test>-->
+	</test>
+	
 </suite>
