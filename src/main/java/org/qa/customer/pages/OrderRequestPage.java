@@ -15,31 +15,31 @@ public class OrderRequestPage {
 	private By ordrRequestMenuItem = By.xpath("//span[@class='mat-list-item-content']//span[text()='Order Request']");
 	private By typeDD = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[1]");
 	private By typeDDData = By.xpath("//span[contains(text(), 'Move')]");
-	
+
 	private By truckDD = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[2]");
-	
+
 	private By chesisDD = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[3]");
 	private By chesisDDData = By.xpath("//span[contains(text(), 'Trucker (40 ft)')]");
-	
+
 	private By containerNumber = By.xpath("//section[@class='ng-star-inserted']//input[contains(@id, 'mat-input-')]");
 	
-	private By originXpath = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[4]");
-	private By originData = By.xpath("//span[contains(text(), '1 E ASHENHEIM (Pricesmart)')]");
+	private By originDD = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[4]");
+	private By originDDData = By.xpath("//span[contains(text(), 'PriceSmart')]");
 	
-	private By shippingLineXpath = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[6]");
-	private By shippingLineData = By.xpath("//span[contains(text(), 'CMA CGM')]");
+
+	private By destinationDD = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[5]");
+	private By destinationDDData = By.xpath("(//mat-option//span[contains(text(), '')])[1]");
 	
-	private By destinationXpath = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[5]");
-	private By destinationData = By.xpath("//span[contains(text(), '31 Mannings Hill  (Pricesmart)')]");
-
-	private By contentsXpath = By.xpath("(//input[contains(@id,'mat-input-')])[2]");
-
-	private By deptXpath = By.xpath("(//input[contains(@id,'mat-input-')])[3]");
-
-	private By noteXpath = By.xpath("(//textarea[contains(@id,'mat-input-')])");
-
-	private By SendRequest = By.xpath("//span[normalize-space()='Send Request']");
-
+	private By shippingLineDD = By.xpath("(//mat-select[contains(@id, 'mat-select-')])[6]");
+	private By shippingLineDDData = By.xpath("(//mat-option//span[contains(text(), '')])[2]");
+	
+	private By contents = By.xpath("//input[@formcontrolname='contents']");
+	private By deptCode = By.xpath("//input[@formcontrolname='departmentCode']");
+	private By notes = By.xpath("//textarea[@formcontrolname='notes']");
+	
+	private By submitButton = By.xpath("//span[text()=' Send Request ']");
+	private By successMessage = By.xpath("//div[text()=' Order Request Submitted Successfully ']");
+	
 	public OrderRequestPage(WebDriver driver) {
 		this.driver = driver;
 		util = new ElementUtil(this.driver);
@@ -48,7 +48,16 @@ public class OrderRequestPage {
 	public void createMoveOrderRequest() throws InterruptedException {
 
 		util.fluentWaitPresenceOfWebElement(ordrRequestMenuItem).click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+
+	}
+
+	public String getOrderPageUrl() throws InterruptedException {
+		return driver.getCurrentUrl();
+	}
+	
+	
+	public void sendRequest() throws InterruptedException {
 		WebElement dd = util.getWebelement(typeDD);
 		if (dd.isDisplayed()) {
 			util.clickOnElement(dd);
@@ -61,29 +70,23 @@ public class OrderRequestPage {
 		util.getWebelement(chesisDDData).click();
 		util.getWebelement(containerNumber).sendKeys(util.generateRamdomNo(7));
 		util.clickOnCB(GitTrackerConstants.customerCBList);
-
-		util.getWebelement(originXpath).click();
-		Thread.sleep(3000);
-		util.fluentWaitPresenceOfWebElement(originData).click();
-
-		util.getWebelement(destinationXpath).click();
+		util.getWebelement(originDD).click();
+		util.getWebelement(originDDData).click();
+		util.getWebelement(destinationDD).click();
+		util.getWebelement(destinationDDData).click();;
+		util.getWebelement(shippingLineDD).click();
+		util.getWebelement(shippingLineDDData).click();
+		
+		util.getWebelement(contents).sendKeys("Contents");
+		util.getWebelement(deptCode).sendKeys("code1234");
+		util.getWebelement(notes).sendKeys("Automation is going on");
+		
+		util.getWebelement(submitButton).click();
+	}
+	
+	public String getSuccessMessage() throws InterruptedException {
 		Thread.sleep(2000);
-		util.getWebelement(destinationData).click();
-
-		util.getWebelement(shippingLineXpath).click();
-		Thread.sleep(2000);
-		util.getWebelement(shippingLineData).click();
-
-		Thread.sleep(2000);
-		util.getWebelement(contentsXpath).sendKeys("Mobile Phone");
-
-		Thread.sleep(2000);
-		util.getWebelement(deptXpath).sendKeys("TESTDEPT1");
-
-		Thread.sleep(2000);
-		util.getWebelement(noteXpath).sendKeys("Order received. Processing now. Will update when shipped.");
-		Thread.sleep(2000);
-		//util.getWebelement(SendRequest).click();
+		return util.getWebelement(successMessage).getText();
 	}
 
 }
