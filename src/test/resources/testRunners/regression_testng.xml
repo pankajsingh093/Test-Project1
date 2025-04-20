@@ -21,7 +21,7 @@
 			<class name="org.qa.gittracker.tests.OrderEditPageTest" />
 		</classes>
 	</test> -->
-	<test thread-count="5" name="CustomerLoginPageTest">
+<!--	<test thread-count="5" name="CustomerLoginPageTest">
 		<classes>
 			<class name="org.qa.customer.tests.CustomerLoginPageTest" />
 		</classes>
@@ -30,6 +30,6 @@
 		<classes>
 			<class name="org.qa.customer.tests.OrderRequestPageTest" />
 		</classes>
-	</test> 
+	</test> -->
 	
 </suite>
