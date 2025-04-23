@@ -51,4 +51,10 @@ public class OrderEditPageTest extends BaseTest {
 		//Assert.assertEquals(oep.getText().trim(), "Vehicle is already in transit");
 	}
 
+	@Test(priority = 6)
+	public void testTruckerLoOut() throws InterruptedException {
+		op = lp.logOut();
+		
+	}
+
 }

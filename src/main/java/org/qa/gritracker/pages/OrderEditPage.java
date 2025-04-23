@@ -79,6 +79,9 @@ public class OrderEditPage {
 	
 	private By editDispatcherDropDownDataList = By.xpath("(//div[contains(@id, 'mat-select-')]//mat-option)[1]");
 	
+
+	private By SettingXml = By.xpath("(//button[contains(@class, 'mat-focus-indicator mat-menu-trigger mat-icon-button mat-button-base')])");
+	private By SignOutBtn = By.xpath("(//*[text()='Sign Out'])");
 	
 	/**
 	 * completed tab
@@ -335,6 +338,11 @@ public class OrderEditPage {
 			}
 		}
 	}
-	
+	public OrderPage logOut() throws InterruptedException {
+		System.out.println("Hi");
+		util.fluentWaitTillElementClickable(SettingXml).click();
+		util.fluentWaitPresenceOfWebElement(SignOutBtn).click();
+		return new OrderPage(driver);
+	}
 
 }
