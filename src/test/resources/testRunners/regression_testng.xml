@@ -26,5 +26,6 @@
 			<class name="org.qa.gittracker.tests.LoginPageTest" />
 		</classes>
 	</test>
+	
 </suite>
 
