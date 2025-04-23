@@ -53,7 +53,7 @@ public class OrderEditPageTest extends BaseTest {
 
 	@Test(priority = 6)
 	public void testTruckerLoOut() throws InterruptedException {
-		op = lp.logOut();
+		op = oep.logOut();
 		
 	}
 
