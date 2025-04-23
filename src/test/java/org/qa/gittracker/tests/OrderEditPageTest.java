@@ -21,40 +21,34 @@ public class OrderEditPageTest extends BaseTest {
 		//Assert.assertEquals(oep.getUpdatedStatus().trim(), "Requested");
 	}
 	
-	@Test(priority=1, enabled=false)
+	@Test(priority=1, enabled=true)
 	public void testDispatchEvent() throws InterruptedException {
 		oep.makingStatusDispactch();
 		Assert.assertEquals(oep.getUpdatedStatus().trim(), "Dispatched");
 	}
 	
-	@Test(priority=2, enabled=false)
+	@Test(priority=2, enabled=true)
 	public void testInTransit() throws InterruptedException {
 		oep.makingStatuInTransit();
 		Assert.assertEquals(oep.getUpdatedStatus().trim(), "In-Transit");
 	}
 	
-	@Test(priority=3, enabled=false)
+	@Test(priority=3, enabled=true)
 	public void testDelivered() throws InterruptedException {
 		oep.makingStatuInDelivered();
 		Assert.assertEquals(oep.getUpdatedStatus().trim(), "Delivered");
 	}
 	
-	@Test(priority=4, enabled=false)
+	@Test(priority=4)
 	public void testDriverInTransit() throws InterruptedException {
 		oep.driverInTransit();
 		//Assert.assertEquals(oep.getText().trim(), "Driver is already in transit");
 	}
 	
-	@Test(priority=5, enabled=false)
+	@Test(priority=5)
 	public void testVechileInTransit() throws InterruptedException {
 		oep.vehicleInTransit();
 		//Assert.assertEquals(oep.getText().trim(), "Vehicle is already in transit");
-	}
-
-	@Test(priority = 6, enabled=false)
-	public void testTruckerLoOut() throws InterruptedException {
-		op = oep.logOut();
-		
 	}
 
 }
