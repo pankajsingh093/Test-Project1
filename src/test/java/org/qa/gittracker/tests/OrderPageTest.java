@@ -22,4 +22,10 @@ public class OrderPageTest extends BaseTest {
 		Assert.assertEquals(op.getOrderSuccessMessage(), GitTrackerConstants.ORDER_SUCCESS_MESSAGE);
 	}
 
+	@Test(priority = 1)
+	public void testTruckerLoOut() throws InterruptedException {
+		Thread.sleep(3000);
+		op.logOut();
+
+	}
 }

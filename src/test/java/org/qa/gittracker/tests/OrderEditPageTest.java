@@ -52,5 +52,11 @@ public class OrderEditPageTest extends BaseTest {
 	}
 
 	
+	@Test(priority = 6)
+	public void testTruckerLoOut() throws InterruptedException {
+		Thread.sleep(3000);
+		oep.logOut();
+
+	}
 
 }

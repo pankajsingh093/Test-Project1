@@ -89,6 +89,10 @@ public class OrderPage {
 	
 	private By attachment = By.xpath("//input[@type='file']");
 	
+    private By SettingXml = By.xpath("(//button[contains(@class, 'mat-focus-indicator mat-menu-trigger mat-icon-button mat-button-base')])");
+	private By SignOutBtn = By.xpath("(//*[text()='Sign Out'])");
+	private By cancelBtn = By.xpath("//mat-icon[text()='cancel']");
+
 	/**
 	 * Search related locators
 	 * @param driver
@@ -223,6 +227,9 @@ public class OrderPage {
 	//	eleUtil.waitScrollTillWebElement(attach).sendKeys(absPath);
 		
 		eleUtil.waitScrollTillWebElementAndClick(saveBtn);
+
+		Thread.sleep(3000);
+		eleUtil.waitScrollTillWebElementAndClick(cancelBtn);
 		
 	}
 	
@@ -291,6 +298,12 @@ public class OrderPage {
 			}
 		}
 	}
-	
+	public void logOut() throws InterruptedException {
+		System.out.println("Hi");
+		eleUtil.fluentWaitTillElementClickable(SettingXml).click();
+		eleUtil.fluentWaitPresenceOfWebElement(SignOutBtn).click();
+	}
+
+
 
 }

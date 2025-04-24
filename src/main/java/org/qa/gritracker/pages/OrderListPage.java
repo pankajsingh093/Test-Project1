@@ -23,6 +23,9 @@ public class OrderListPage {
 	private By rownCount = By.xpath("(//mat-row[@role='row'])[1]");
 	private By containerNumber = By.xpath("//mat-table[@role='table']//a");
 
+	private By SettingXml = By.xpath("(//button[contains(@class, 'mat-focus-indicator mat-menu-trigger mat-icon-button mat-button-base')])");
+	private By SignOutBtn = By.xpath("(//*[text()='Sign Out'])");
+
 	public OrderListPage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(this.driver);
@@ -71,5 +74,10 @@ public class OrderListPage {
 	public void clickOnContainerNumber() {
 		eleUtil.fluentWaitTillElementClickable(containerNumber).click();
 		
+	}
+	public void logOut() throws InterruptedException {
+		System.out.println("Hi");
+		eleUtil.fluentWaitTillElementClickable(SettingXml).click();
+		eleUtil.fluentWaitPresenceOfWebElement(SignOutBtn).click();
 	}
 }

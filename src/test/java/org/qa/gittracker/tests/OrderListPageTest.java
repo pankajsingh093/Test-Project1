@@ -26,4 +26,11 @@ public class OrderListPageTest extends BaseTest {
 		olp.searchData();
 		Assert.assertEquals(olp.getRowCount(), 1);
 	}
+
+	@Test(priority = 2)
+	public void testTruckerLoOut() throws InterruptedException {
+		Thread.sleep(3000);
+		olp.logOut();
+		
+	}
 }
