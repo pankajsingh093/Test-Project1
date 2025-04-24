@@ -20,11 +20,12 @@ public class CustomerLoginPage {
 		// Goods In Transit Tracker
 	}
 
-	public void doLogin(String uN, String passwrd) throws InterruptedException {
+	public OrderRequestPage doLogin(String uN, String passwrd) throws InterruptedException {
 		Thread.sleep(3000);
 		driver.findElement(email).sendKeys(uN);
 		driver.findElement(pwd).sendKeys(passwrd);
 		driver.findElement(loginBtn).click();
+		return new OrderRequestPage(driver);
 	}
 
 }
