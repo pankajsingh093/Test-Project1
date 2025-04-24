@@ -39,7 +39,7 @@ jobs:
       #     --file pom.xml || true
       #     #continue-on-error: true
 
-    - name: Do login with another username & password, build with maven   
+    - name: Do Customer login with another username & password, build with maven   
       run: |
           echo : $id
           mvn clean install -Dbrowser=chrome -Dusername=${ID} -Dpassword=${PASS}  -DsuiteXmlFile=src/test/resources/testRunners/customer_testng.xml --file pom.xml
