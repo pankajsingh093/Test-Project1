@@ -27,16 +27,17 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Do login with username & password, build with maven
+    
       env:
-          UserID: ${{ secrets.DEV_USER_NAME }}
-          UserPASS: ${{ secrets.DEV_PASS }}
+         # UserID: ${{ secrets.DEV_USER_NAME }}
+         # UserPASS: ${{ secrets.DEV_PASS }}
           
           ID: ${{ secrets.DEV_CUSTOMER_NAME }}
           PASS: ${{ secrets.DEV_CUSTOMER_PASS }}
-      run: |
-          mvn clean install -Dbrowser=chrome -Dusername=${UserID} -Dpassword=${UserPASS} -DsuiteXmlFile=src/test/resources/testRunners/regression_testng.xml 
-          --file pom.xml || true
+    #- name: Do login with username & password, build with maven
+     # run: |
+       #   mvn clean install -Dbrowser=chrome -Dusername=${UserID} -Dpassword=${UserPASS} -DsuiteXmlFile=src/test/resources/testRunners/regression_testng.xml 
+       #   --file pom.xml || true
           #continue-on-error: true
 
     - name: Do login with another username & password, build with maven   
