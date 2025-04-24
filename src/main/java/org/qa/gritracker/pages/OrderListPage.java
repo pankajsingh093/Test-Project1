@@ -76,7 +76,7 @@ public class OrderListPage {
 		
 	}
 	public void logOut() throws InterruptedException {
-		System.out.println("Hi");
+		System.out.println("OrderList");
 		eleUtil.fluentWaitTillElementClickable(SettingXml).click();
 		eleUtil.fluentWaitPresenceOfWebElement(SignOutBtn).click();
 	}

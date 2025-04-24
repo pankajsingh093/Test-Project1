@@ -35,7 +35,7 @@ public class LoginPage {
 	}
 
 	public OrderPage logOut() throws InterruptedException {
-		System.out.println("Hi");
+		System.out.println("login");
 		util.fluentWaitTillElementClickable(SettingXml).click();
 		util.fluentWaitPresenceOfWebElement(SignOutBtn).click();
 		return new OrderPage(driver);

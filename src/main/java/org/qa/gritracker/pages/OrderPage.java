@@ -299,7 +299,7 @@ public class OrderPage {
 		}
 	}
 	public void logOut() throws InterruptedException {
-		System.out.println("Hi");
+		System.out.println("OrderPage");
 		eleUtil.fluentWaitTillElementClickable(SettingXml).click();
 		eleUtil.fluentWaitPresenceOfWebElement(SignOutBtn).click();
 	}
