@@ -338,11 +338,5 @@ public class OrderEditPage {
 			}
 		}
 	}
-	public OrderPage logOut() throws InterruptedException {
-		System.out.println("Hi");
-		util.fluentWaitTillElementClickable(SettingXml).click();
-		util.fluentWaitPresenceOfWebElement(SignOutBtn).click();
-		return new OrderPage(driver);
-	}
 
 }
