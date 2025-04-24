@@ -22,7 +22,7 @@ public class LoginPageTest extends BaseTest{
 		Assert.assertEquals(op.getOrderPageUrl(), GitTrackerConstants.ORDER_PAGE_URL);
 	}
 	
-	@Test(priority = 3, enabled=false )
+	@Test(priority = 3, enabled=true )
 	public void testTruckerLoOut() throws InterruptedException {
 		op = lp.logOut();
 		
