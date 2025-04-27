@@ -18,6 +18,7 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority = 2)
 	public void testTruckerLogin() throws InterruptedException {
 		lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		System.out.println("LoginPage"+prop.getProperty("username"));
 		Thread.sleep(3000);
 		Assert.assertEquals(op.getOrderPageUrl(), GitTrackerConstants.ORDER_PAGE_URL);
 	}
