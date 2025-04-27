@@ -26,18 +26,18 @@ public class LoginPage {
 		// Goods In Transit Tracker
 	}
 
-	public OrderPage doLogin(String uN, String passwrd) throws InterruptedException {
+	public void doLogin(String uN, String passwrd) throws InterruptedException {
 		Thread.sleep(3000);
 		driver.findElement(email).sendKeys(uN);
 		driver.findElement(pwd).sendKeys(passwrd);
 		driver.findElement(loginBtn).click();
-		return new OrderPage(driver);
+		//return new OrderPage(driver);
 	}
 
-	public OrderPage logOut() throws InterruptedException {
+	public void logOut() throws InterruptedException {
 		System.out.println("login");
 		util.fluentWaitTillElementClickable(SettingXml).click();
 		util.fluentWaitPresenceOfWebElement(SignOutBtn).click();
-		return new OrderPage(driver);
+		//return new OrderPage(driver);
 	}
 }

@@ -17,14 +17,14 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority = 2)
 	public void testTruckerLogin() throws InterruptedException {
-		op = lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		Thread.sleep(3000);
 		Assert.assertEquals(op.getOrderPageUrl(), GitTrackerConstants.ORDER_PAGE_URL);
 	}
 	
 	@Test(priority = 3, enabled=true )
 	public void testTruckerLoOut() throws InterruptedException {
-		op = lp.logOut();
+		lp.logOut();
 		
 	}
 
