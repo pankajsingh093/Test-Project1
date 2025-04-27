@@ -11,7 +11,7 @@ public class LoginPage {
 
 	private By email = By.xpath("(//input[contains(@id, 'mat-input-')])[1]");
 	private By pwd = By.xpath("(//input[contains(@id, 'mat-input-')])[2]");
-	private By loginBtn = By.xpath("//*[text()='login1']");
+	private By loginBtn = By.xpath("//*[text()='login']");
 
 	private By SettingXml = By.xpath("(//button[contains(@class, 'mat-focus-indicator mat-menu-trigger mat-icon-button mat-button-base')])");
 	private By SignOutBtn = By.xpath("(//*[text()='Sign Out'])");
