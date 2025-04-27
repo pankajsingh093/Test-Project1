@@ -24,7 +24,7 @@ jobs:
       env:
         UserID: ${{secrets.DEV_USER_NAME}}
         UserPASS: ${{secrets.DEV_PASS}}
-        ID: ${secrets.CUSTOMER_NAME}}
+        ID: ${{secrets.CUSTOMER_NAME}}
         PASS: ${{secrets.CUSTOMER_PASS}}
       run: |
         echo "Username is ${UserID} and Password is ${UserPASS}"
