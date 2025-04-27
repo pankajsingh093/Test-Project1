@@ -10,8 +10,8 @@ public class OrderRequestPageTest extends BaseTest {
 
 	@BeforeClass
 	public void doLogin() throws InterruptedException {
-		clp.doLogin(prop.getProperty("customerUN"), prop.getProperty("customerPASS"));
-		// lp.doLogin(System.getProperty("username"), System.getProperty("password"));
+		//clp.doLogin(prop.getProperty("customerUN"), prop.getProperty("customerPASS"));
+		clp.doLogin(System.getProperty("username"), System.getProperty("password"));
 	}
 
 	@Test
