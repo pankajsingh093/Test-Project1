@@ -22,10 +22,10 @@ jobs:
 
     - name: Do login with username & password, build with maven
       env:
-        UserID: ${{ secrets.DEV_USER_NAME }}
-        UserPASS: ${{ secrets.DEV_PASS }}
-        ID: ${{ secrets.DEV_CUSTOMER_NAME }}
-        PASS: ${{ secrets.DEV_CUSTOMER_PASS }}
+        UserID: ${{secrets.DEV_USER_NAME}}
+        UserPASS: ${{secrets.DEV_PASS}}
+        ID: ${secrets.DEV_CUSTOMER_NAME}}
+        PASS: ${{secrets.DEV_CUSTOMER_PASS}}
       run: |
         echo "Username is ${UserID} and Password is ${UserPASS}"
         mvn clean install --file pom.xml -Dbrowser=chrome -Dusername=${UserID} -Dpassword=${UserPASS} -DsuiteXmlFile=src/test/resources/testRunners/regression_testng.xml || true
