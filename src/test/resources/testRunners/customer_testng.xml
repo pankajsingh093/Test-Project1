@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="6">
 
-	<test thread-count="5" name="CustomerLoginPageTest">
+	<test thread-count="5" name="LoginPageTest">
 		<classes>
-			<class name="org.qa.customer.tests.CustomerLoginPageTest" />
+			<class name="org.qa.gittracker.tests.LoginPageTest" />
 		</classes>
 	</test>
 	<!--<test thread-count="5" name="OrderRequestPageTest">
