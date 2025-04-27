@@ -1,37 +1,44 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
 name: Java CI with Maven
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
-
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-
     - name: Do login with username & password, build with maven
       env:
-        UserID: ${{secrets.DEV_USER_NAME}}
-        UserPASS: ${{secrets.DEV_PASS}}
-        ID: ${{secrets.CUSTOMER_NAME}}
-        PASS: ${{secrets.CUSTOMER_PASS}}
+          UserID: ${{ secrets.DEV_USER_NAME }}
+          UserPASS: ${{ secrets.DEV_PASS }}
+          
+          ID: ${{ secrets.DEV_CUSTOMER_NAME }}
+          PASS: ${{ secrets.DEV_CUSTOMER_PASS }}
       run: |
-        echo "Username is ${UserID} and Password is ${UserPASS}"
+          # Running regression tests
+          mvn clean install -Dbrowser=chrome -Dusername=${UserID} -Dpassword=${UserPASS} -DsuiteXmlFile=src/test/resources/testRunners/regression_testng.xml 
+          --file pom.xml || true
+          #continue-on-error: true
 
-        echo "Username is ${ID} and Password is ${PASS}" 
-        mvn clean install --file pom.xml -Dbrowser=chrome -Dusername=${UserID} -Dpassword=${UserPASS} -DsuiteXmlFile=src/test/resources/testRunners/regression_testng.xml || true
-        mvn clean install --file pom.xml -Dbrowser=chrome -Dusername=${ID} -Dpassword=${PASS} -DsuiteXmlFile=src/test/resources/testRunners/customer_testng.xml
-    # Optional: Upload dependency graph (commented for now)
-    # - name: Update dependency graph
-    #   uses: advanced-security/maven-dependency-submission-action@v0
+          # Running customer tests     
+          mvn clean install -Dbrowser=chrome -Dusername=${ID} -Dpassword=${PASS}  -DsuiteXmlFile=src/test/resources/testRunners/customer_testng.xml --file pom.xml
