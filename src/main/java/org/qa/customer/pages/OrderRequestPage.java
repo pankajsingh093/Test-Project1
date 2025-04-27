@@ -39,6 +39,7 @@ public class OrderRequestPage {
 	private By noteXpath = By.xpath("(//textarea[contains(@id,'mat-input-')])");
 
 	private By SendRequest = By.xpath("//span[normalize-space()='Send Request']");
+	private By successMessage = By.xpath("//div[text()=' Order Request Submitted Successfully ']");
 
 	public OrderRequestPage(WebDriver driver) {
 		this.driver = driver;
