@@ -53,8 +53,10 @@
 				<configuration>
 				<forkCount>3</forkCount>
 				<reuseForks>true</reuseForks>
+				<suiteXmlFiles>
+				<suiteXmlFile>src/test/resources/testRunners/regression_testng.xml</suiteXmlFile>
 				<!-- it is not required if we are running through maven command -->
-				 <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+				<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
 				</suiteXmlFiles>
 				</configuration>
 			</plugin>
