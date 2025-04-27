@@ -28,18 +28,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Do login with username & password, build with maven
-      env:
-          UserID: ${{ secrets.DEV_USER_NAME }}
-          UserPASS: ${{ secrets.DEV_PASS }}
-          
+      env: 
           ID: ${{ secrets.DEV_CUSTOMER_NAME }}
-          PASS: ${{ secrets.DEV_CUSTOMER_PASS }}
-      run: |
-          mvn clean install -Dbrowser=chrome -Dusername=${UserID} -Dpassword=${UserPASS} -DsuiteXmlFile=src/test/resources/testRunners/regression_testng.xml 
-          --file pom.xml || true
-          #continue-on-error: true
-
-    - name: Do login with another username & password, build with maven   
+          PASS: ${{ secrets.DEV_CUSTOMER_PASS }} 
       run: |
           echo : $id
           mvn clean install -Dbrowser=chrome -Dusername=${ID} -Dpassword=${PASS}  -DsuiteXmlFile=src/test/resources/testRunners/customer_testng.xml --file pom.xml
