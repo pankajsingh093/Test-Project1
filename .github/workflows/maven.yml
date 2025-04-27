@@ -41,7 +41,10 @@ jobs:
 
     - name: Do login with another customerUN & customerPASS, build with maven   
       run: |
-          echo : $ID
+        
+          run: echo "Username is ${UserID} and Password is ${UserPASS}
+
+          run: echo "Username is ${ID} and Password is ${PASS}
           mvn clean install -Dbrowser=chrome -Dusername=${ID} -Dpassword=${PASS}  -DsuiteXmlFile=src/test/resources/testRunners/customer_testng.xml --file pom.xml
       #mvn -B package --file pom.xml
 
