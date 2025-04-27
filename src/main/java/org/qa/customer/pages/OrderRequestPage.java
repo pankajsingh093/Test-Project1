@@ -81,7 +81,7 @@ public class OrderRequestPage {
 		util.getWebelement(deptCode).sendKeys("code1234");
 		util.getWebelement(notes).sendKeys("Automation is going on");
 		
-		//util.getWebelement(submitButton).click();
+		util.getWebelement(submitButton).click();
 	}
 	
 	public String getSuccessMessage() throws InterruptedException {
