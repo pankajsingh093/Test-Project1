@@ -54,9 +54,8 @@
 				<forkCount>3</forkCount>
 				<reuseForks>true</reuseForks>
 				<suiteXmlFiles>
-				
-    <suiteXmlFile>src/test/resources/testRunners/regression_testng.xml</suiteXmlFile>
-    <suiteXmlFile>src/test/resources/testRunners/customer_testng.xml</suiteXmlFile>
+				<suiteXmlFile>src/test/resources/testRunners/regression_testng.xml</suiteXmlFile>
+                <suiteXmlFile>src/test/resources/testRunners/customer_testng.xml</suiteXmlFile>
 				<!-- it is not required if we are running through maven command -->
 				<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
 				</suiteXmlFiles>
