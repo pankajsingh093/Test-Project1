@@ -28,6 +28,8 @@ jobs:
         PASS: ${{secrets.CUSTOMER_PASS}}
       run: |
         echo "Username is ${UserID} and Password is ${UserPASS}"
+
+        echo "Username is ${ID} and Password is ${PASS}" 
         mvn clean install --file pom.xml -Dbrowser=chrome -Dusername=${UserID} -Dpassword=${UserPASS} -DsuiteXmlFile=src/test/resources/testRunners/regression_testng.xml || true
 
     - name: Do login with another customerUN & customerPASS, build with maven
