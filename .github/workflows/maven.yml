@@ -26,9 +26,8 @@ jobs:
           UserPASS: ${{ secrets.DEV_PASS }}
       run: |
           mvn clean install -Dbrowser=chrome -Dusername=${UserID} -Dpassword=${UserPASS} -DsuiteXmlFile=src/test/resources/testRunners/regression_testng.xml 
-
+          continue-on-error: true   # <- THIS is added here
     - name: Do login with another username & password, run tests with Maven
-      continue-on-error: true   # <- THIS is added here
       env:
           ID: ${{ secrets.DEV_CUSTOMER_NAME }}
           PASS: ${{ secrets.DEV_CUSTOMER_PASS }}
