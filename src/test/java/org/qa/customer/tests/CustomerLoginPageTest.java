@@ -19,8 +19,8 @@ public class CustomerLoginPageTest extends BaseTest{
 	@Test(priority=2)
 	public void testCustomerLogin() throws InterruptedException {
 		//op = lp.doLogin(prop.getProperty("customerUN"), prop.getProperty("customerPASS"));
-	     clp.doLogin("pankaj.singh+gitt-customer@lightwaremedia.com", "Pankaj123!");
-		Thread.sleep(3000);
+		clp.doLogin(prop.getProperty("customerUN"), prop.getProperty("customerPASS"));
+		Thread.sleep(2000);
 		Assert.assertEquals(op.getOrderPageUrl(), GitTrackerConstants.CUST_OPEN_ORDER_PAGE_URL);
 	}
 
