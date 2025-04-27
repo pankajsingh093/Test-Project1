@@ -21,7 +21,7 @@ public class CustomerLoginPageTest extends BaseTest{
 		//op = lp.doLogin(prop.getProperty("customerUN"), prop.getProperty("customerPASS"));
 		clp.doLogin(System.getProperty("username"), System.getProperty("password"));
 		Thread.sleep(2000);
-		System.out.println("CustomerLoginPage"+System.getProperty("username"));
+		System.out.println("CustomerLoginPage"+System.getProperty("customerUN"));
 		Assert.assertEquals(orp.getOrderPageUrl(), GitTrackerConstants.CUST_OPEN_ORDER_PAGE_URL);
 	}
 
