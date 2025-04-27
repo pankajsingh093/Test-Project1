@@ -25,6 +25,7 @@ public class CustomerLoginPage {
 		driver.findElement(email).sendKeys(uN);
 		driver.findElement(pwd).sendKeys(passwrd);
 		driver.findElement(loginBtn).click();
+		System.out.println("CustomerLoginPage");
 	}
 
 }
